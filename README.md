@@ -1,4 +1,5 @@
 # **The Best Booze**
+![Logo The Best Booze](https://github.com/GiacomoDM/TheBestBooze-TecWeb/blob/master/index/img/logo_small.png "Logo The Best Booze")
 
 ### Progetto didattico per il corso *Tecnologie Web* a.a.2016/2017
 ###### Università degli studi di Padova - Corso di Laurea in Informatica
@@ -10,7 +11,7 @@ Valutazione: 28/30.
 
 ---
 
-### Vincoli e linee guida imposte per il progetto:
+### Vincoli e linee guida imposte per il progetto
 
 Si richiede la progettazione e lo sviluppo di un sito web con contenuto a scelta dello studente ma che rispetti le seguenti caratteristiche:
 
