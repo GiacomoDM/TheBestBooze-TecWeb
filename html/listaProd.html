@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Amministrazione - TheBestBooze</title>
+	<meta name="title" content="Amministrazione - TheBestBooze" />
+	<meta name="description" content="Account dell'amministratore, elimina prodotti, modifica database, aggiungi prodotto." />
+	<meta name="keywords" content="TheBestBooze, amministratore, account, prodotti, modifica, impostazioni" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+</head> 
+<body>
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+	<a href="#content" class="jump">Salta al contenuto</a>
+</div>
+<div id="content" class="honly">
+	<div class="boxA tabella">
+		<h1>Modifica Prodotti</h1>
+		<p>Modifica i dettagli dei singoli prodotti con il pulsante "Modifica prodotto".</p>
+		<p>Rendi nuovamente disponibile all'acquisto un prodotto o rimuovilo dai prodotti acquistabili con il pulsante "Cambia Disponibilità".</p>
+		<a href="accountAm.php" rel="nofollow">Torna alla pagina di amministrazione</a>
+		<table summary="Elenco di tutti i prodotti disponibili. Mostra le seguenti informazioni per ogni prodotto: codice, nome, prezzo, categoria, sottocategoria, anno di produzione, nome del produttore, lingua del prodotto.">
+			<caption>Elenco prodotti esistenti</caption>
+			<thead>
+				<tr>
+					<th id="COD" scope="col">Codice</th>
+					<th id="NOM" scope="col">Nome</th>
+					<th id="PREZ" scope="col">Prezzo</th>
+					<th id="CAT" scope="col">Categoria</th>
+					<th id="SCAT" scope="col">Sottocategoria</th>
+					<th id="ANN" scope="col">Anno</th>
+					<th id="PROD" scope="col">Produttore</th>
+					<th id="LANG" scope="col">Lingua</th>
+					<th id="DISP" scope="col">Disponibile</th>
+					<th id="Modifica" scope="col" class="hide">Modifica prodotto</th>
+					<th id="Cambia" scope="col" class="hide">Cambia Disponibilità</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="col">Codice</th>
+					<th scope="col">Nome</th>
+					<th scope="col">Prezzo</th>
+					<th scope="col">Categoria</th>
+					<th scope="col">Sottocategoria</th>
+					<th scope="col">Anno</th>
+					<th scope="col">Produttore</th>
+					<th scope="col">Lingua</th>
+					<th scope="col">Disponibile</th>
+					<th scope="col" class="hide">Modifica prodotto</th>
+					<th scope="col" class="hide">Cambia Disponibilità</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th id="COD0" scope="row">1111</th>
+					<td headers="NOM">duff</td>
+					<td headers="PREZ">12.22</td>
+					<td headers="CAT">birra</td>
+					<td headers="SCAT">NULL</td>
+					<td headers="ANN">NULL</td>
+					<td headers="PROD">alcolizzati</td>
+					<td headers="LANG">en</td>
+					<td headers="DISP">si</td>
+					<td class="hide" headers="Modifica"><a href="modProd.html" class="edit"><span>Modifica</span></a></td>
+					<td class="hide" headers="Cambia"><a href="delProd.php" class="switch"><span>Cambia Disponibilità</span></a></td>
+				</tr>
+				<tr>
+					<th id="COD1" scope="row">1311</th>
+					<td headers="NOM">brut</td>
+					<td headers="PREZ">12.22</td>
+					<td headers="CAT">vini</td>
+					<td headers="SCAT">NULL</td>
+					<td headers="ANN">1955</td>
+					<td headers="PROD">alcolizzati</td>
+					<td headers="LANG">it</td>
+					<td headers="DISP">no</td>
+					<td class="hide" headers="Modifica"><a href="modProd.html" class="edit"><span>Modifica</span></a></td>
+					<td class="hide" headers="Cambia"><a href="delProd.php" class="switch"><span>Cambia Disponibilità</span></a></td>
+				</tr>
+				<tr>
+					<th id="COD2" scope="row">1211</th>
+					<td headers="NOM">ribolla gialla</td>
+					<td headers="PREZ">12.22</td>
+					<td headers="CAT">vini</td>
+					<td headers="SCAT">NULL</td>
+					<td headers="ANN">1988</td>
+					<td headers="PROD">alcolizzati</td>
+					<td headers="LANG">it</td>
+					<td headers="DISP">si</td>
+					<td class="hide" headers="Modifica"><a href="modProd.html" class="edit"><span>Modifica</span></a></td>
+					<td class="hide" headers="Cambia"><a href="delProd.php" class="switch"><span>Cambia Disponibilità</span></a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="paging">
+			<span>Vai alla pagina:</span>
+			<ul>
+				<li><a href='/.php?pagina='>Precedente</a></li>
+				<li><a href='/.php?pagina='>1</a></li>
+				<li class="active"><a>2</a></li>
+				<li><a href='/.php?pagina='>3</a></li>
+				<li><a href='/.php?pagina='>Successiva</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

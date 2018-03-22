@@ -1,0 +1,343 @@
+body, html {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+* {
+	padding: 0em;
+	margin: 0em;
+	border: 0em;
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+	page-break-after: avoid;
+}
+a {
+	color: black;
+}
+abbr[title], a {
+	text-decoration: none;
+}
+h1, h2 {
+	page-break-after: avoid;
+}
+#logo, #title, #breadcrumb, .prodLi h2, .prodLi p, .prodLi form, .listProd span, .cat, #box_singolo, #box_singolo img, #singolo, #risric h1, .prodotto {
+	display: inline-block;
+}
+.prodotto span, .card .titolo {
+	display: block;
+}
+.jump, #menu, #search_area, .card img, #log-out, .footer, .pulsanti, .prodotti img, .imgnot, .cat img, #filter, #singolo form, .hide, .paging {
+	display: none;
+}
+#content, .notifica {
+	text-align: center;
+}
+.riquadro, #boxLog dt, #question dl, #us p, #support p, #legal p, #support dd, #box_singolo, .prodotto a {
+	text-align: left;
+}
+.errin, .tot, .subt {
+	text-align: right;
+}
+#breadcrumb li, #support dt, .prodotto img {
+	float: left;
+}
+#singolo {
+	vertical-align: top;
+}
+li {
+	list-style: none;
+}
+h1, caption, #breadcrumb li:before, .titolo, .subt, .riquadro legend, .listInfo span, .tot, #question dt, #singolo li:first-child, thead {
+	font-weight: bold;
+}
+h1, .riquadro legend {
+	color: #000080;
+}
+#question h2, #singolo li:first-child, .tot{
+	font-size: 1.3em;
+}
+#us p, #support p, #support dl, #legal p, #legal h2, .prodotto .titolo, .riquadro legend, .subt, .prodLi, #boxLogo label, #singolo li, #box_singolo label, #Qta {
+	font-size: 1.2em;
+}
+.listInfo span, .prodLi input[type=text], #singolo input[type=text] {
+	font-size: 1em;
+}
+/* HEADER */
+#header{
+	border-bottom: 0.1em solid gray;
+	height: 3cm;
+}
+#logo {
+	margin: auto;
+}
+#logo img {
+	width: 2.5cm;
+}
+#title img {
+	height: 2.5cm;
+	margin: 0 3.5cm;
+}
+/* BREADCRUMB */
+#breadcrumb ol {
+	margin: 1em;
+}
+#breadcrumb li:before {
+	content: "> ";
+	color: #ff4600;
+	padding-left: 0.25em;
+}
+#breadcrumb li:first-child:before {
+	content: none;
+}
+/* CONTENT */
+#content {
+	margin-top: 0.5cm;
+}
+h1 {
+	font-size: 2em;
+	padding-bottom: 0.5em;
+}
+/* ACCOUNT */
+.card {
+	padding-bottom: 2em;
+}
+.card .titolo {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+}
+/* MODIFICA DATI - ISCRIZIONE - CRONOLOGIA - ACQUISTO */
+.boxW, .boxA {
+	width: 20cm;
+	margin: auto;
+	padding: 1.5em 0;
+}
+.riquadro {
+	width: 90%;
+	margin: 0 auto 1em auto;
+	padding: 0.5em 1em 1em 1em;
+	border: 0.1em solid #000080;
+}
+.riquadro legend {
+	padding: 0em 0.5em;
+	background-color: white;
+}
+.riquadro input, .riquadro select {
+	width: 100%;
+	padding: 0.1em;
+	margin: 0.3em 0em;
+    border: 0.05em solid #aaa;
+}
+#esito {
+	margin-top: 1em;
+	padding-top: 1.5em;
+	border-top: 0.05em solid lightgray;
+}
+.listInfo li, .riepilogo li{
+	padding: 0.25em 0;
+}
+.listInfo span{
+	padding: 0 1em 0 0.5em;
+}
+.line{
+	border-top: 0.05em solid lightgray;
+	border-bottom: 0.05em solid lightgray;
+}
+.listProd li:before, .riepilogo li:before, #elencoProd li:before { 
+	content: "-";
+	margin-right: 0.5em;
+}
+.listProd li{
+	margin-left: 1em;
+}
+.listProd span{
+	width: 29%;
+	font-weight: normal;
+}
+.tot{
+	margin: 0.5em 1.5em 0 0;
+}
+#elencoProd li {
+	padding: 0.25em 0;
+}
+.subt {
+	padding-top: 0.5em;
+	border-top: 0.05em solid lightgray;
+}
+.riquadro input[type=radio] {
+	width: auto;
+	margin: 0.5em 1em 0.5em 0em;
+}
+.riepilogo li{
+	padding-left: 2em;
+}
+.boxW form h2 { 
+	margin: 1em 3em;
+	font-size: 1.4em;
+}
+#esito h2 {
+	font-size: 1.4em;
+	padding-bottom: 0.5em;
+}
+.nojsalert, .ricPlaceholder {
+	font-style: italic;
+	color: gray;
+}
+.errin {
+	color: red;
+}
+/* CARRELLO */
+.prodotti {
+	width: 18cm;
+	margin: 0 1.5em;
+	padding: 1.5em 1em;
+	border-bottom: 0.1em solid #000080;
+}
+.prodLi h2, .prodLi p, .prodLi form {
+	width: 30%;
+}
+.prodLi input[type=text], #singolo input[type=text] {
+	padding: 0.2em 0.5em;
+	border: 0.05em solid lightgray;
+	width: 2em
+}
+/* 404 - ELIMINA - SUCCESSO */
+.notifica {
+	margin: 1em;
+}
+.notifica p {
+	padding-bottom: 0.5em;
+}
+/* FAQ */
+#faq, #question {
+	width: 20cm;
+	margin: auto;
+}
+#question h2 {
+	margin: 1em;
+	padding: 0.4em 0 ;
+	border-top: 0.05em solid gray;
+	border-bottom: 0.05em solid gray;
+}
+#question dl {
+	margin-bottom: 1.5em;
+}
+#question dt {
+	margin: 1em 2em;
+}
+#question dd {
+	margin: 1em 2em;
+	padding: 0 0.5em;
+}
+/* HOME */
+.cat {
+	width: 3cm;
+}
+/* INFO */ 
+#us, #support, #wrapper {
+	margin-top: -1cm;
+}
+#who, #history , #contacts , #where , #legal{
+	width: 20cm;
+	margin: auto;
+	padding-top: 2.5em;	
+}
+#us p , #support p , #support dl , #legal p, #legal h2 {
+	padding: 0em 2em;
+}
+#support dt {
+	padding-right: 0.5em;
+}
+#legal h2 {
+	padding: 1.5em 1em;
+}
+/* LOG-IN */
+#boxLog {
+	width: 20%;
+	min-width: 19em;
+	margin: 0.5em auto 2em auto;
+	border: 0.1em solid #000080;
+}
+#boxLog form {
+	margin: 1em;
+	padding-bottom: 1em;
+	border-bottom: 0.05em solid gray;
+}
+#boxLog input[type=text], #boxLog input[type=password]{
+	margin: 0.5em 0 1.5em 0;
+	padding: 0.3em 0.5em;
+    border: 0.05em solid gray;
+	width: 94.5%;
+}
+#boxAm {
+	border-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+#boxLog .buttonlink {
+	display: block;
+	padding-bottom: 1em;
+}
+/* PRODOTTO SINGOLO */
+#box_singolo {
+	width: 19cm;
+	margin: auto;
+}
+#box_singolo img {
+	width: 8cm;
+	height: 8cm;
+	margin: 1em;
+}
+#singolo {
+	padding: 1.5em;
+}
+#singolo li {
+	padding-bottom: 0.5em;
+}
+#singolo li:before {
+	content: "-";
+	padding: 1em;
+}
+#singolo li:first-child {
+	padding-bottom: 1em;
+}
+#singolo li:first-child:before {
+	content: "";
+	padding: 0;
+}
+/* RICERCA */
+#ric {
+	font-size: 1.5em;
+	padding: 0 1em; 
+}
+.prodotto {
+	width: 9cm;
+	height: 4cm;
+	margin: 1em;
+	border: 0.05em solid lightgray;
+}
+.prodotto img {
+	width: 3.5cm;
+	height: 3.5cm;
+	margin: 0.25cm;
+	padding-right: 1em;
+}
+.prodotto span {
+	margin-top: 0.5em;
+}
+.prodotto .titolo {
+	padding: 0.5em;
+}
+/* AMMINISTRAZIONE */
+table {
+	margin: auto;
+	border-collapse: collapse;
+}
+caption {
+	font-size: 1.4em; 
+	padding: 0.5em;
+}
+table, tr, td, th {
+	border: 0.05em solid #aaa;
+}
+td, th {
+ 	padding: 0.5em;
+}

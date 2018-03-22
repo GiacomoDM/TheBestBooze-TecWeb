@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+<head> 
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Accesso Amministrazione - TheBestBooze</title>
+	<meta name="title" content="Accesso Amministrazione - TheBestBooze" />
+	<meta name="description" content="pagina di accesso TheBestBooze se il visitatore non è registrato viene cortesemente invitato a farlo." />
+	<meta name="keywords" content="TheBestBooze,accedi,autenticazione,iscrizione,Nome utente,password, amministrazione, amministratore" />
+	<link rel="next" type="text/html" href="index.php" title="pagina iniziale - TheBestBooze"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<script type="text/javascript" src="JavaScript/checkForm.js"></script>
+</head>
+<body onload="callcheck('checkAm');">
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+</div>
+<div id="content" class="honly">	
+	<h1>Esegui l’autenticazione</h1>
+	<div id="boxLog">
+		<form action="loginAmForm.php" method="post" id="boxAm" onsubmit="return callValidateAll('checkAm');">
+			<fieldset>
+			<dl>
+				<dt><label for="inputNome">Nome</label></dt>
+					<dd><input type="text" name="Nome" id="inputNome" maxlength="30"/></dd>
+				<dt><label for="inputPasswd"><span xml:lang="en">Password</span></label></dt>
+					<dd><input type="password" name="Passwd" id="inputPasswd" maxlength="16"/></dd>
+			</dl>
+				<input type="submit" name="accedi" id="registrati" class="pulsanti" value="Accedi"/>
+			</fieldset>
+		</form>
+	</div>
+</div>
+</body>
+</html>

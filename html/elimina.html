@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head> 
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Elimina account - TheBestBooze</title>
+	<meta name="title" content="Elimina account - TheBestBooze" />
+	<meta name="description" content="Elimina account, per eliminare tutti i tuoi dati da questo sito." />
+	<meta name="keywords" content="Elimina account, eliminazione, cancella dati, disiscrivimi, cancellare account" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+</head>
+<body>
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+	<a href="#content" class="jump">Salta al contenuto</a>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="index.php"><span xml:lang="en">Home</span></a></li>
+		<li><a href="info.php" rel="help">Su di noi</a></li>
+		<li><a href="faq.php" rel="help"><abbr xml:lang="en" title="Frequently Asked Question">F.A.Q.</abbr></a></li>
+		<li id="pulsanteC"><a href="carrello.php" rel="nofollow" accesskey="k">Carrello</a></li>
+		<li id="areapers">
+			<a href="account.php" id="pulsanteA" rel="nofollow" accesskey="a" title="Accedi alla tua area personale">Alessandro</a>
+			<div id="comparsa">
+				<form action="logout.php" method="post">
+					<fieldset>
+						<input type="submit" class="pulsanti" name="esci" value="Log-out" accesskey="o"/>
+					</fieldset>
+				</form>
+			</div>
+		</li>
+	</ul>
+</div>
+<div id="content" class="honly">
+	<h1>Vuoi eliminare il tuo account?</h1>
+	<div class="notifica">
+		<p>Ci dispiace che abbandoni il nostro sito.</p>
+		<p>La procedura di eliminazione e' irreversibile. Effettuandola verranno cancellati tutti i tuoi dati personali in nostro possesso.</p>
+		<p>Ti garantiamo che tutti i tuoi dati personali verranno cancellati, nel rispetto della privacy.</p>
+		<form action="eliminaAcc.php" method="get">
+			<fieldset>
+				<input type="submit" class="pulsanti" name="disiscriviti" value="Elimina Account"/>
+			</fieldset>			
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* GENERALI */
+#breadcrumb, #triangle, .colonna ul {
+    display: none;
+}
+.listProd span, #risric h1, .colonna, .colonna:hover .show, .colonna:active .show {
+	display: block;
+}
+.notifica, .intestW, .boxW, .boxA, #faq, #question, #who, #history , #contacts , #where , #legal, #box_singolo, .card{
+	width: 95%;
+}
+.boxW, .boxA, #faq, #question, #who, #history , #contacts , #where , #legal, #boxLog, .card {
+	min-width: 0;
+}
+.boxW, .boxA, .prodotto {
+	margin: 1.5em auto;
+}
+#faq, #question, #links {
+	padding: 0;
+}
+/* HEADER */
+#header {
+    position: fixed;
+	top: 0;
+	right: 0;
+    z-index: 2;
+	height: 6em;
+}
+#logo {
+	margin-top: 0.25em;
+}
+#logo img, #title img {
+	height: 5.5em;
+	width: auto;
+	vertical-align: middle;
+}
+#title {
+	vertical-align: middle;
+}
+@media only screen and (max-width : 500px){
+    #title img {
+        display:none;
+    }
+}
+/* MENU */
+#menu {
+	cursor: pointer;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+	width: 2em;
+    height: 2em;
+	background-color: transparent;
+	border: 0;
+	background-image: url("../img/menu2.png");
+	background-size: cover;
+	z-index: 2;
+}
+#menu ul {
+	position: fixed;
+    top: 0;
+    right: -2em;
+	width: 0;
+    height: 100vh;
+	transition: width 0s ease-in-out;
+}
+#menu:active ul, #menu:hover ul {
+	cursor: auto;
+	width: 60vw;
+	z-index: 3;
+	background-color: #000080;
+	box-shadow: -0.5em 0 1em #3f3f3f;
+	transition: width 0.5s ease-in-out;
+}
+#menu li, #menu #pulsanteA, #menu #pulsanteC, #menu #areapers, #menu #comparsa {
+	display: block;
+	width: 100%;
+	border-bottom: 0.1em solid #ff4600;
+	background-color: #ffc800;
+}
+#menu #pulsanteA, #menu #areapers {
+	float: none;
+}
+#menu #pulsanteC {
+	position: static; 
+}
+#pulsanteC:hover{
+	background-color: #ffaa00;
+}
+#comparsa {
+	border-top: 0;
+	box-shadow: 0 0 0 0;
+}
+#comparsa .pulsanti {
+	border: 0;
+	padding: 0;
+	font-size: 1em;
+}
+#comparsa:hover{
+	background-color: #ffaa00;
+}
+/* BARRA DI RICERCA */
+#search_area {
+	margin-top: 6em;
+	float: none;
+	width: 100%; 
+	background-color: #ffc800;
+	border-bottom: 0.15em solid #ff4600;
+	text-align: center;
+}
+#search_area form {
+	margin: 0 auto;
+	padding: 0.5em;
+}
+#search {
+	margin: 0;
+}
+#drop_menu {
+	left: 0.3em; 
+}
+@media only screen and (max-width : 548px){
+    #drop_menu, #drop_menu select {
+		display: none;
+	}
+	#search {
+		width: 95%;
+		margin: 0 0.5em;
+	}
+	#ricerca {
+		border: 0.1em solid #ff4600;
+		border-right: 0;
+		border-radius: 0.25em 0 0 0.25em;
+		width: 75%;
+	}
+	#Go {
+		width: 15%;
+	}
+}
+/* CONTENT */
+.honly {
+	margin-top: 6em;
+}
+/* 404 - ELIMINA ACCOUNT - ORDINE SUCCESSO*/
+.imgnot{
+	width: 20%;
+}
+/* MODIFICA DATI - MODIFICA PRODOTTO - ISCRIZIONE - CRONOLOGIA - ACQUISTO - CARRELLO - ADD PRODOTTO*/
+.listProd span{
+	width: auto;
+	padding-left: 1.25em;
+}
+.listProd span:first-child{
+	display: inline;
+	padding-left: 0.5em;
+}
+.prodLi {
+	max-width: 95%;
+}
+/* FAQ */
+#question h2, #question dt, #question dd {
+	margin: 1.5em;
+}
+/* HOME */
+.cat {
+	width: 90%;
+	max-width: 28em;
+	height: auto;
+	margin: 1.5em auto;
+	padding: 0;
+}
+.cat a {
+	line-height: normal;
+	font-size: 1.5em;
+	overflow: hidden;
+	box-shadow: 0 0 1.1em #999;
+}
+.cat span {
+	display: block;
+	position: relative;
+	word-break: break-all;
+	visibility: visible;
+	background-color: #f0f0f0;
+	padding: 0.2em 0;
+}
+.cat img {
+	position: static; 
+	width: 100%;
+	height: 100%;
+}
+/* LOG-IN */
+#boxLog {
+	width: 70%;
+}
+/* PRODOTTO SINGOLO */
+#box_singolo img {
+	width: 90%;
+	height: 90%;
+	margin: 1em 5%;
+}
+/* RICERCA */
+#filter {
+	text-align: center;
+	margin: 1em 2.5em;
+}
+.prodotto {
+	width: 75%;
+	height: auto;
+}
+.prodotto img {
+	width: 30%;
+	height: 30%;
+	margin: 1em;
+}
+.prodotto span {
+	margin-top: 1em;
+}
+.prodotto .titolo {
+	padding-bottom: 0;
+}
+/* ACCOUNT - ACCOUNT AMMINISTRAZIONE */
+.card {
+	height: 11em;
+	margin: 0.5em auto;
+}
+.card img {
+	width: 20%;
+	height: 20%;
+}
+.card span{
+	padding: 0.5em;
+}
+.card .titolo{
+	margin-top: 0;
+}
+/* FOOTER */
+#links {
+	width: 100%;
+	margin: 0;
+}
+.colonna {
+	width: 100%;
+	text-align: center;
+}
+.colonna h1:after{
+	padding-left: 0.5em;
+	content: "\25BC";
+	font-size: 0.7em;
+}
+.colonna{
+	border-top: 0.1em solid #ffc800;
+	padding-top: 0.25em;
+}
+.colonna:first-child{
+	border-top: 0;
+}
+.colonna:hover h1:after, .colonna:active h1:after{
+	content: "";
+}
+.show{
+	padding-bottom: 1em;
+}

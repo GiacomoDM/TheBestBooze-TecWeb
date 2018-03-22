@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Acquisto - TheBestBooze</title>
+	<meta name="title" content="Acquisto - TheBestBooze" />
+	<meta name="description" content="La pagina acquisto ha un riepilogo dell'ordine ed è possibile scegliere il metodo di spedizione e pagamento." />
+	<meta name="keywords" content="TheBestBooze,acquisto,alcolici, ordine, riepilogo, spedizione, pagamento" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<script type="text/javascript" src="JavaScript/checkBuy.js"></script>
+	<script type="text/javascript" src="JavaScript/checkSearch.js"></script>
+</head>
+<body onload="setupBuy(); setupSearch();">
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+	<a href="#content" class="jump">Salta al contenuto</a>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="index.php"><span xml:lang="en">Home</span></a></li>
+		<li><a href="info.php" rel="help">Su di noi</a></li>
+		<li><a href="faq.php" rel="help"><abbr xml:lang="en" title="Frequently Asked Question">F.A.Q.</abbr></a></li>
+		<li id="pulsanteC"><a href="carrello.php" rel="nofollow" accesskey="k">Carrello</a></li>
+		<li id="areapers">
+			<a href="account.php" id="pulsanteA" rel="nofollow" accesskey="a" title="Accedi alla tua area personale"></a>
+			<div id="comparsa">
+				<form action="logout.php" method="post">
+					<fieldset>
+						<input type="submit" class="pulsanti" name="esci" value="Log-out" accesskey="o"/>
+					</fieldset>
+				</form>
+			</div>
+		</li>
+	</ul>
+</div>
+<div id ="breadcrumb">
+	<ol>
+		<li><a href="index.php"><span xml:lang="en">Home</span></a></li>
+		<li><a href="account.php" rel="nofollow"><span xml:lang="en">Account</span></a></li>
+		<li><a href="carrello.php" rel="nofollow">Carrello</a></li>
+		<li>Acquisto</li>
+	</ol>
+</div>
+<div id="search_area">
+	<form action="ricerca.php" onsubmit="return validateSearch();">
+		<fieldset>
+			<div id="drop_menu">
+				<select name="categ" title="Scegli una categoria">
+					<option selected="selected" value="Tutte le categorie">Tutte le categorie</option>
+					<option value="Vino">Vino</option>
+					<option value="Birra">Birra</option>
+					<option value="Superalcolico">Superalcolico</option>
+					<option value="Sidro">Sidro</option>
+				</select>
+			</div>
+			<div id="search">
+				<input id="ricerca" type="text" name="ric" maxlength="30" title="Ricerca nella categoria selezionata" accesskey="s"/>
+				<input id="Go" type="submit" value=" " title="Cerca"/>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<div id="content">
+	<div class="intestW">
+		<h1>Acquisto</h1>
+		<p>Prosegui con l'acquisto del tuo ordine completando i campi sottostanti.</p>
+	</div>
+	<div class="boxW">
+		<form action="fattura.php" method="post" onsubmit="return callValidateAll();">
+			<fieldset class="riquadro">
+				<legend>Riepilogo ordine</legend>
+				<ul id="elencoProd">
+				</ul>
+				<p class="subt"><span>Subtotale: </span></p>
+			</fieldset>
+			<fieldset class="riquadro">
+				<legend>Metodo di spedizione</legend>
+				<span>Seleziona il metodo di spedizione:</span>
+				<select name='sped' title="Scegli un metodo di spedizione">
+					<option value="Standard"  xml:lang="en">Standard</option>
+					<option value="Daily" xml:lang="en">Daily</option>
+					<option value="Express" xml:lang="en">Express</option>
+				</select>
+				<input type="radio" name="addr" id="predaddr" value="indirizzo" checked="checked" title="Scegli indirizzo predefinito" onchange="deactivateInput('predaddr');"/>
+				<label for="predaddr">Usa l'indirizzo predefinito</label><br />
+				<input type="radio" name="addr" id="newaddr" value="nuovoindirizzo" title="Inserisci nuovo indirizzo" onclick="radioActivate('newaddr');"/>
+				<label for="newaddr">Spedisci ad un nuovo indirizzo: </label><br />
+				<dl class="riepilogo">
+					<dt><label for="inInd">Indirizzo: </label></dt>
+						<dd><input type="text" id="inInd" name="indirizzo" maxlength="30"/></dd>
+					<dt><label for="inCitta">Città: </label></dt>
+						<dd><input type="text" id="inCitta" name="citta" maxlength="30"/></dd>
+				</dl>
+			</fieldset>
+			<fieldset class="riquadro">
+				<legend>Metodo di pagamento</legend>
+				<input type="radio" name="mthd" id="predpay" value="metodo" checked="checked" title="Scegli metodo di pagamento predefinito" onchange="deactivateInput('predpay');"/>
+				<label for="predpay">Usa il metodo di pagamento predefinito</label><br />
+				<input type="radio" name="mthd" id="newpay" value="nuovometodo" title="Inserisci nuovo metodo di pagamento" onchange="radioActivate('newpay');"/>
+				<label for="newpay">Utilizza questo metodo di pagamento:</label><br />
+				<dl class="riepilogo">
+					<dt><label for="inTipo">Tipo di carta</label></dt>
+						<dd><select name='carta' id="inTipo" title="Scegli il tipo di carta">
+							<option value="MasterCard" xml:lang="en">MasterCard</option>
+							<option value="Visa" xml:lang="en">Visa</option>
+							<option value="AmericanExpress" xml:lang="en">American Express</option>
+						</select></dd>
+					<dt><label for="inNum">Numero carta</label></dt>
+						<dd><input type="text" id="inNum" name="Num" maxlength="16"/></dd>
+				</dl>
+			</fieldset>
+			<fieldset>
+				<input type="submit" class="pulsanti" value="Acquista"/>
+			</fieldset>
+		</form>
+	</div>
+</div>
+<div class="footer">
+	<div id="go_back">
+		<a href="#" class="pulsanti" rel="bookmark" accesskey="u">Torna su</a>
+	</div>
+	<div id="links">
+		<div class="colonna">
+			<h1>Su di noi</h1>
+			<ul class="show">
+				<li><a href="info.php#who" rel="help">Chi siamo</a></li>
+				<li><a href="info.php#history" rel="help">La nostra storia</a></li>
+				<li><a href="info.php#legal" rel="help">Note legali</a></li>
+			</ul>
+		</div>
+		<div class="colonna">
+			<h1>Serve aiuto?</h1>
+			<ul class="show">
+				<li><a href="info.php#contacts" rel="help">Contatti</a></li>
+				<li><a href="info.php#where" rel="help">Sedi</a></li>
+				<li><a href="faq.php" rel="help">Leggi le <abbr xml:lang="en" title="Frequently Asked Question">F.A.Q.</abbr></a></li>
+			</ul>
+		</div>
+		<div class="colonna">
+			<h1>Social</h1>
+			<ul class="show">
+				<li><a href="https://www.facebook.com/The-Best-Booze-557365764602897/" id="fb">Pagina <span xml:lang="en">Facebook</span></a></li>
+				<li><a href="https://twitter.com/TheBestBooze" id="twitter">Seguici su <span xml:lang="en">Twitter</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

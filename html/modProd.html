@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head> 
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Modifica prodotto - TheBestBooze</title>
+	<meta name="title" content="Modifica prodotto - TheBestBooze" />
+	<meta name="description" content="TheBestBooze pagina dove si può modificare i prodotti disponibili." />
+	<meta name="keywords" content="TheBestBooze, modifica, inserimento, aggiungi, nuovo, prodotto" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<script type="text/javascript" src="JavaScript/checkForm.js"></script>
+</head>
+<body onload="callcheck('checkProd');">
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+</div>
+<div id="content" class="honly">
+	<h1>Modifica prodotto</h1>
+	<div class="boxW">
+		<form action="handlerModProd.php" method="post" enctype="multipart/form-data" onsubmit="return callValidateAll('checkProd');">
+			<fieldset class="riquadro">
+				<legend>Modifica prodotto</legend>
+				<dl>
+					<dt><label for="inNome">Nome *</label></dt>
+						<dd><input type="text" id="inNome" name="Nome" maxlength="30"/></dd>
+					<dt><label for="inPrezzo">Prezzo * <span class="nojsalert">(Due cifre dopo il punto)</span></label></dt>
+						<dd><input type="text" id="inPrezzo" name="Prezzo" maxlength="9" title="Inserisci il prezzo con due cifre dopo il punto"/></dd>
+					<dt><label for="inCategoria">Categoria *</label></dt>
+						<dd>
+							<select id="inCategoria" name="Categoria"> 
+								<option value="Vino">Vino</option>
+								<option value="Birra">Birra</option>
+								<option value="Superalcolico">Superalcolico</option>
+								<option value="Sidro">Sidro</option>
+							</select>
+						</dd>
+					<dt><label for="inSottocat">Sottocategoria</label></dt>
+						<dd><input type="text" id="inSottocat" name="Sottocategoria" maxlength="20"/></dd>
+					<dt><label for="inAnno">Anno</label></dt>
+						<dd><input type="text" id="inAnno" name="Anno" maxlength="4"/></dd>
+					<dt><label for="inProduttore">Produttore *</label></dt>
+						<dd><input type="text" id="inProduttore" name="Produttore" maxlength="40"/></dd>
+					<dt><label for="inImg">Carica immagine * <span class="ricPlaceholder">(In formato <abbr xml:lang="en" title="Joint Photographic Experts Group (file format)">JPG</abbr> e dimensioni non superiori a 350<abbr xml:lang="en" title="KiloByte">kB</abbr>)</span></label></dt>
+						<dd><input type="file" id="inImg" name="pic" accept="image/*" title="Inserisci un immagine in JPG, dimensione massima 350kB" /></dd>
+					<dt><label>Lingua *</label></dt>
+						<dd id="inLingua">
+							<input type="radio" name="lang" id="ita" value="it" checked="checked"/>
+							<label for="ita">Italiano</label><br />
+							<input type="radio" name="lang" id="eng" value="en" />
+							<label for="eng">Ingelse</label><br />
+							<input type="radio" name="lang" id="ted" value="de" />
+							<label for="ted">Tedesco</label><br />
+							<input type="radio" name="lang" id="fran" value="fr" />
+							<label for="fran">Francese</label><br />
+						</dd>
+				</dl>
+			</fieldset>
+			<p id="obblig">I campi segnati con (*) sono obbligatori.</p>
+			<fieldset>
+				<input type="submit" class="pulsanti" name="modifica" value="Conferma Modifiche"/>
+			</fieldset>
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Amministrazione- TheBestBooze</title>
+	<meta name="title" content="Amministrazione- TheBestBooze" />
+	<meta name="description" content="Account dell'amministratore, elimina prodotti, modifica database, aggiungi prodotto." />
+	<meta name="keywords" content="TheBestBooze, amministratore, account, prodotti, modifica, impostazioni" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+</head> 
+<body>
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+</div>
+<div id="content" class="honly">
+	<div class="card">
+		<a href="addProd.php" rel="nofollow">
+			<img src="img/cronologia.png" alt="cronologia"/>
+			<span class="titolo">Aggiungi Prodotto</span>
+			<span>Aggiungi un nuovo prodotto a quelli acquistabili.</span>
+		</a>		
+	</div>
+	<div class="card">
+		<a href="listaProd.php?pagina=0" rel="nofollow">
+			<img src="img/gear.png" alt="modifica dati"/>
+			<span class="titolo">Modifica o elimina prodotti</span>
+			<span>Permette di modificare i dettagli e/o eliminare i prodotti disponibili.</span>
+		</a>
+	</div>
+	<form id="log-out" action="logout.php" method="post">
+		<div><input type="submit" class="pulsanti" name="logout" value="Log-Out"/></div>
+	</form>	
+</div>
+</body>
+</html>

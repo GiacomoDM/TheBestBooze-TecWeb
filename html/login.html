@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+<head> 
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Accedi - TheBestBooze</title>
+	<meta name="title" content="Accedi - TheBestBooze" />
+	<meta name="description" content="pagina di accesso TheBestBooze se il visitatore non è registrato viene cortesemente invitato a farlo." />
+	<meta name="keywords" content="TheBestBooze,accedi,autenticazione,iscrizione,Nome utente,password" />
+	<link rel="next" type="text/html" href="index.php" title="pagina iniziale - TheBestBooze"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link type="text/css" rel="stylesheet" href="style/screen.css" media="handheld, screen"/>
+	<link type="text/css" rel="stylesheet" href="style/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" />
+	<link type="text/css" rel="stylesheet" href="style/print.css" media="print"/>
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<script type="text/javascript" src="JavaScript/checkForm.js"></script>
+</head>
+<body onload="callcheck('checkLogIn');">
+<div id="header">
+	<div id="logo">
+		<a href="index.php" accesskey="h">
+			<img src="img/logo_small.png" alt="logo TheBestBooze"/>
+		</a>
+	</div>
+	<div id="title">
+		<a href="index.php">
+			<img src="img/scritta.png" alt="scritta TheBestBooze"/>
+		</a>
+	</div>
+</div>
+<div id="content" class="honly">	
+	<h1>Esegui l’autenticazione</h1>
+	<div id="boxLog">
+		<form action="loginForm.php" method="post" onsubmit="return callValidateAll('checkLogIn');">
+			<fieldset>
+			<dl>
+				<dt><label for="inEmail"><span xml:lang="en">E-mail</span></label></dt>
+					<dd><input type="text" name="Email" id="inEmail" maxlength="64" /></dd>
+				<dt><label for="inPasswd"><span xml:lang="en">Password</span></label></dt>
+					<dd><input type="password" name="Passwd" id="inPasswd" maxlength="16" /></dd>
+			</dl>
+				<input type="submit" name="accedi" id="registrati" class="pulsanti" value="Accedi"/>
+			</fieldset>
+		</form>
+		<p>Non sei ancora iscritto?</p>
+		<a class="pulsanti buttonlink" href="iscrizione.php">Iscriviti ora</a>
+	</div>
+	<a href="loginAm.php" rel="nofollow">Esegui l'accesso come amministratore.</a>
+</div>
+</body>
+</html>
