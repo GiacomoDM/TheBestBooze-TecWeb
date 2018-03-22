@@ -1,5 +1,5 @@
+![Logo The Best Booze](https://github.com/GiacomoDM/TheBestBooze-TecWeb/blob/master/index/img/logo_small.png "Logo The Best Booze")     
 # **The Best Booze**
-![Logo The Best Booze](https://github.com/GiacomoDM/TheBestBooze-TecWeb/blob/master/index/img/logo_small.png "Logo The Best Booze")
 
 ### Progetto didattico per il corso *Tecnologie Web* a.a.2016/2017
 ###### Università degli studi di Padova - Corso di Laurea in Informatica
